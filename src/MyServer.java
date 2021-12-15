@@ -45,7 +45,7 @@ public class MyServer {
         m_OutputList = new ArrayList<PrintWriter>();
 
         try{
-            ServerSocket s_socket = new ServerSocket(5001);
+            ServerSocket s_socket = new ServerSocket(3000);
             while(true){
                 Socket c_socket = s_socket.accept();
                 ClientManagerThread c_thread = new ClientManagerThread();
